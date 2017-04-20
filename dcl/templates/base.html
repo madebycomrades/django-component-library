@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Django Component Library</title>
+        <link rel="stylesheet" href="/static/components/css/site.css">
+        {% block extra_css %}{% endblock %}
+    </head>
+    <body>
+        {% include 'components/demo/DemoHeader/DemoHeader.html' with data=DemoHeader %}
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+</html>
