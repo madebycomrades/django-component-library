@@ -1,0 +1,21 @@
+{% extends 'components/components_detail.html' %}
+
+{% block component %}
+  <h3 class="Demo-h3">Two col</h3>
+  <div class="Demo-block Demo-block--1">
+    {% include 'components/demo/DemoList/DemoList.html' with data=data.twoCol columns="two" %}
+    <h4 class="Demo-h4">Template</h4>
+    <pre class="Demo-code">&lcub;% include 'components/{{group}}/{{component}}/{{component}}.html' with data=data.threeCol columns="three" %&rcub;</pre>
+    <h4 class="Demo-h4">Data</h4>
+    <pre class="Demo-code">{{data.twoCol}}</pre>
+  </div>
+
+  <h3 class="Demo-h3">Three col</h3>
+  <div class="Demo-block Demo-block--2">
+    {% include 'components/demo/DemoList/DemoList.html' with data=data.threeCol columns="three" %}
+    <h4 class="Demo-h4">Template</h4>
+    <pre class="Demo-code">&lcub;% include 'components/{{group}}/{{component}}/{{component}}.html' with data=data.threeCol columns="three" %&rcub;</pre>
+    <h4 class="Demo-h4">Data</h4>
+    <pre class="Demo-code">{{data.threeCol}}</pre>
+  </div>
+{% endblock component %}

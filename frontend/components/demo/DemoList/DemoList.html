@@ -1,0 +1,7 @@
+<ul class="DemoList {% if columns %}DemoList--{{columns}}Col{% endif %}">
+  {% for item in data %}
+    <li class="DemoList-item">
+      {% include 'components/demo/DemoListItem/DemoListItem.html' with data=item %}
+    </li>
+  {% endfor %}
+</ul>

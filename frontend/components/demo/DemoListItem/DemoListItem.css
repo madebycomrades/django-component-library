@@ -1,0 +1,18 @@
+/**
+ * @define DemoListItem
+ */
+
+.DemoListItem-link {
+  background: var(--colour-red);
+  color: var(--colour-grey);
+  display: block;
+  padding: var(--gutter);
+  text-align: center;
+  text-decoration: none;
+  transition: all var(--transition-time);
+}
+
+.DemoListItem-link.is-active {
+  background: var(--colour-green);
+  color: var(--colour-white);
+}

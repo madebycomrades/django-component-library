@@ -1,0 +1,74 @@
+/**
+ * @define DemoHeader
+ */
+
+.DemoHeader {
+  background: var(--colour-white);
+}
+
+/* DemoHeader - logo */
+
+.DemoHeader-logo {
+  margin: 0;
+}
+
+.DemoHeader-logoLink {
+  background: var(--colour-red);
+  color: var(--colour-grey);
+  display: block;
+  font-size: var(--font-size-large);
+  padding: var(--gutter);
+  text-align: center;
+  text-decoration: none;
+  transition: all var(--transition-time);
+}
+
+.DemoHeader-logoLink:hover {
+  background: var(--colour-blue);
+  color: var(--colour-white);
+}
+
+/* DemoHeader - nav - content */
+
+.DemoHeader-navContent {
+  background: var(--colour-green);
+  transition: all var(--transition-time);
+}
+
+@media (--medium) {
+
+  .DemoHeader-navList {
+    display: flex;
+  }
+
+  .DemoHeader-navItem {
+    flex: 1;
+  }
+}
+
+.DemoHeader-navLink {
+  border-top: 1px solid var(--colour-grey);
+  color: var(--colour-black);
+  display: block;
+  padding: var(--gutter);
+  text-align: center;
+  text-decoration: none;
+  transition: color var(--transition-time);
+}
+
+@media (--medium) {
+
+  .DemoHeader-navLink {
+    border-top: 0;
+    padding-left: var(--gutter-large);
+    padding-right: var(--gutter-large);
+  }
+}
+
+.DemoHeader-navLink:hover {
+  color: var(--colour-white);
+}
+
+.DemoHeader-navItem:last-child .DemoHeader-navLink {
+  padding-right: 0;
+}
