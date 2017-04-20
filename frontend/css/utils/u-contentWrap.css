@@ -1,0 +1,12 @@
+/**
+ * @define utilities;
+ *
+ * Enforce max-width across site
+ */
+
+.u-contentWrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--width-large);
+  position: relative;
+}

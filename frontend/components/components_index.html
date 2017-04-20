@@ -1,0 +1,22 @@
+{% extends 'components/components_base.html' %}
+
+{% block content %}
+
+  {% for group in components %}
+
+    <h2 class="Demo-h2">{{group.dir}}</h2>
+
+    <ul class="Demo-list">
+
+      {% for component in group.components %}
+      <li class="Demo-item">
+        <a href="./{{group.dir}}/{{component}}/">
+          {{component}}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+  {% endfor %}
+
+{% endblock content %}

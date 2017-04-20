@@ -1,0 +1,23 @@
+{% extends 'components/components_base.html' %}
+
+{% block content %}
+
+  <h2 class="Demo-h2">Template</h2>
+
+  {% block template_content %}
+  <pre class="Demo-code">&lcub;% include 'components/{{group}}/{{component}}/{{component}}.html' with data=data %&rcub;</pre>
+  {% endblock template_content %}
+
+  <h2 class="Demo-h2">Examples</h2>
+  {% block component %}
+    <h3 class="Demo-h3">Default</h3>
+    <div class="Demo-block Demo-block--1">
+      {% with template="components/"|add:group|add:"/"|add:component|add:"/"|add:component|add:".html" %}
+        {% include template with data=data %}
+    {% endwith %}
+      <h4 class="Demo-h4">Data</h4>
+      <pre class="Demo-code">{{data}}</pre>
+    </div>
+  {% endblock component %}
+
+{% endblock content %}
