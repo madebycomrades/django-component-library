@@ -1,0 +1,20 @@
+<header class="DemoHeader">
+  <div class="DemoHeader-logo">
+    <a href="/" class="DemoHeader-logoLink">
+      Demo
+    </a>
+  </div>
+  <div class="DemoHeader-nav">
+    <nav class="DemoHeader-navContent">
+      <ul class="DemoHeader-navList">
+        {% for item in data.nav_items %}
+        <li class="DemoHeader-navItem">
+          <a href="{{ item.url }}" class="DemoHeader-navLink {% if item.active %}is-active{% endif %}">
+            {{ item.label }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

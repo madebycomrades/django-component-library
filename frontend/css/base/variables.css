@@ -9,17 +9,18 @@
   --font-headings: "Work Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   --font-body: "Work Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
+  /* font sizes */
+
+  --font-size-normal: 1rem;
+  --font-size-large: 1.5rem;
+
   /* colours */
 
   --colour-white: #fff;
-  --colour-grey-dark: #454545;
-  --colour-grey-light: #cdcdcd;
+  --colour-grey: #454545;
   --colour-black: #333;
   --colour-red: #ff4e00;
-  --colour-green-xdark: #0b6c7c;
-  --colour-green-dark: #a3bbad;
-  --colour-green-light: #7ee19e;
-  --colour-green-xlight: #d8e5e5;
+  --colour-green: #7ee19e;
   --colour-blue: #00bdff;
 
   /* transitions */
@@ -33,9 +34,6 @@
   --gutter-small: 0.5rem;
   --gutter: 1rem;
   --gutter-large: 2rem;
-
-  --border-width: 1px;
-  --border-radius: 3px;
 
   /* content widths */
 

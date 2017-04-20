@@ -1,0 +1,19 @@
+{
+  "nav_items": [
+    {
+      "label": "Lorem",
+      "url": "#lorem",
+      "active": true
+    },
+    {
+      "label": "Ipsum",
+      "url": "#ipsum",
+      "active": false
+    },
+    {
+      "label": "Dolor sit amet",
+      "url": "#dolor-sit-amet",
+      "active": false
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "twoCol": [
+    {
+      "label": "Lorem",
+      "url": "#lorem"
+    },
+    {
+      "label": "Ipsum",
+      "url": "#ipsum"
+    },
+    {
+      "label": "Dolor",
+      "url": "#dolor"
+    },
+    {
+      "label": "Sit amet",
+      "url": "#sit-amet"
+    }
+  ],
+  "threeCol": [
+    {
+      "label": "Lorem",
+      "url": "#lorem"
+    },
+    {
+      "label": "Ipsum",
+      "url": "#ipsum"
+    },
+    {
+      "label": "Dolor sit amet",
+      "url": "#dolor-sit-amet"
+    }
+  ]
+}

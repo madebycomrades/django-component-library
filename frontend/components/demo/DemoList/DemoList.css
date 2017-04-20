@@ -1,0 +1,22 @@
+/**
+ * @define DemoList
+ */
+
+.DemoList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.DemoList-item {
+  flex: 1;
+}
+
+/* Variations */
+
+.DemoList--twoCol .DemoList-item {
+  flex-basis: 50%;
+}
+
+.DemoList--threeCol .DemoList-item {
+  flex-basis: 33.3%;
+}
