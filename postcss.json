@@ -1,0 +1,18 @@
+{
+  "use": [
+    "postcss-easy-import",
+    "postcss-custom-media",
+    "postcss-custom-properties",
+    "autoprefixer",
+    "cssnano"
+  ],
+  "input": "frontend/css/site.css",
+  "output": "dcl/components/static/css/site.css",
+  "local-plugins": true,
+  "autoprefixer": {
+    "browsers": "> 5%"
+  },
+  "postcss-easy-import": {
+    "glob": true
+  }
+}
