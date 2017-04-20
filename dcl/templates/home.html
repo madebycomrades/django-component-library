@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Home</h1>
+  {% include 'components/demo/DemoList/DemoList.html' with data=DemoList columns="two" %}
+{% endblock %}
