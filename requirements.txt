@@ -1,0 +1,4 @@
+Django
+pytest-django
+systemfixtures
+flake8
