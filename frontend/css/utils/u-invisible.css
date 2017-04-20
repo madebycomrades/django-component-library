@@ -1,0 +1,11 @@
+/**
+ * @define utilities;
+ *
+ * Hide visually and from screen readers, but maintain layout
+ *
+ * via H5BP
+ */
+
+.u-invisible {
+  visibility: hidden;
+}

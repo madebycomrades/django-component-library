@@ -1,0 +1,13 @@
+/**
+ * @define utilities;
+ *
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ *
+ * via H5BP
+ */
+
+.u-hidden {
+  display: none !important;
+  visibility: hidden;
+}

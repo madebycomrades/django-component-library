@@ -1,0 +1,13 @@
+machine:
+  timezone:
+    Europe/London
+  python:
+    version: 3.5.2
+
+test:
+  pre:
+    - npm run build:templates
+  override:
+    - flake8 .
+    - npm run lint
+    - cd dcl && pytest
