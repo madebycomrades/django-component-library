@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+<h1>Articles</h1>
+
+
+{% for article in articles %}
+  {% include 'components/demo/DemoThumb/DemoThumb.html' with data=article %}
+{% endfor %}
