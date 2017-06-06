@@ -44,7 +44,7 @@ A component-based architecture means any part of the website can be worked on in
 
 ### Directory structure
 
-Each component should follow a similar directory structure:
+Each component should follow a similar directory structure for its frontend files:
 
 ```
 /frontend/components
@@ -137,6 +137,16 @@ All JavaScript added is linted using [ESLint](http://eslint.org/), using [standa
 A `/demo` directory within each component provides a standalone implementation of the component, providing an HTML page and JSON data used to render the component.
 
 It should demonstrate how to use the component. Every possible modifier should be demonstrated to showcase all available states.
+
+### Mapping Django models to components
+
+Components may only need some of a model's fields or may need some dynamic fields generated from the model's data (e.g. a URL to a resized thumbnail for an image).
+
+Using [Django Rest Framework](http://django-rest-framework.org) serializers data can be prepared for components. An example can be seen in the `articles` app within this project. The `ArticleDemoThumbSerializer` takes the `Article` model and serializes it for the `DemoThumb` component.
+
+Using serializers means this serialization is moved out of the individual views and can be shared between other views which also use this component.
+
+Serializers should be named with the model name and then the component name in the following format `<model name><component name>Serializer`
 
 
 ### Further reading

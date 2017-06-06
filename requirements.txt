@@ -2,3 +2,6 @@ Django
 pytest-django
 systemfixtures
 flake8
+Pillow
+djangorestframework
+easy-thumbnails

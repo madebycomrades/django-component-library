@@ -1,0 +1,26 @@
+/**
+ * @define DemoThumb
+ */
+
+.DemoThumb {
+  height: 400px;
+  width: 400px;
+}
+
+.DemoThumb-link {
+  display: block;
+  position: relative;
+}
+
+.DemoThumb-title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.DemoThumb-image {
+  position: absolute;
+}

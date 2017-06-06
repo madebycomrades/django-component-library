@@ -10,4 +10,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     url(r'^components/', include('components.urls', namespace='components')),
+
+    url(r'^articles/', include('articles.urls', namespace='articles')),
 ]
